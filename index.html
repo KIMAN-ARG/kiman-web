@@ -6,7 +6,36 @@
 <title>KIMAN</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<script>
 
+const searchBtn = document.getElementById("search-btn")
+const searchBox = document.getElementById("search-box")
+
+searchBtn.onclick = () => {
+
+if(searchBox.style.width === "220px"){
+searchBox.style.width = "0"
+}else{
+searchBox.style.width = "220px"
+}
+
+}
+
+
+const menuBtn = document.getElementById("menu-btn")
+const sideMenu = document.getElementById("side-menu")
+
+menuBtn.onclick = () => {
+
+if(sideMenu.style.left === "0px"){
+sideMenu.style.left = "-250px"
+}else{
+sideMenu.style.left = "0px"
+}
+
+}
+
+</script>
 <body>
 <header class="topbar">
 
