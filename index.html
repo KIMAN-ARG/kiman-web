@@ -1,36 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<html>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
 
 <title>KIMAN</title>
 
-<style>
-
+</head>
 body{
 margin:0;
-font-family:Futura Md BT, Futura LT;
-background:url("fondo kiman.png");
-background-size:cover;
-background-attachment:fixed;
-color:white;
+font-family:Arial;
 }
 
-/* HEADER */
-
-header{
+.topbar{
+position:fixed;
+top:0;
+width:100%;
+height:70px;
 display:flex;
 align-items:center;
-justify-content:space-between;
-padding:15px 30px;
-background:rgba(0,0,0,0.6);
-backdrop-filter:blur(10px);
+justify-content:center;
 }
 
-.logo 1{
+.topbar-bg{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-1;
+}
+
+.topbar-content{
+width:90%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo img{
 height:40px;
+cursor:pointer;
 }
 
 .icons{
@@ -43,209 +51,64 @@ height:24px;
 cursor:pointer;
 }
 
-/* HERO */
-
-.hero{
-margin:20px;
-border-radius:20px;
-overflow:hidden;
-position:relative;
-}
-
-.hero img{
-width:100%;
-display:block;
-}
-
-.hero-text{
+.search-box{
 position:absolute;
-bottom:20px;
-left:20px;
-background:rgba(0,0,0,0.5);
-padding:20px;
-border-radius:15px;
-}
-
-/* GRID */
-
-.grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
-padding:20px;
-}
-
-.card{
-background:rgba(0,0,0,0.5);
-border-radius:20px;
+top:70px;
+right:5%;
+width:0;
 overflow:hidden;
+transition:0.3s;
 }
 
-.card img{
-width:100%;
-display:block;
+.search-box input{
+width:200px;
+padding:10px;
+border:none;
+background:white;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
 }
-
-.card-text{
-padding:15px;
-}
-
-/* PRODUCTOS */
-
-.products{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
-padding:20px;
-}
-
-.product{
-background:rgba(255,255,255,0.05);
-border-radius:20px;
-overflow:hidden;
-}
-
-.product img{
-width:100%;
-}
-
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:60px 20px;
-}
-
-.footer-logo{
-font-size:60px;
-font-weight:bold;
-margin-bottom:30px;
-}
-
-.social{
-display:flex;
-justify-content:center;
-gap:30px;
-}
-
-.social img{
-height:35px;
-}
-
-</style>
-
-</head>
-
 <body>
+<header class="topbar">
 
-<header>
+<img src="barra 1 kiman.png" class="topbar-bg">
 
-<img src="logo 1.png" class="logo 1">
+<div class="topbar-content">
 
-<div class="icons">
+<img src="catalogo.png" class="icon" id="menu-btn">
 
-<img src="lupa.png">
-<img src="carrito de compras.png">
+<a href="index.html">
+<img src="logo 1.png" class="logo">
+</a>
 
+<div class="right-icons">
+
+<img src="lupa.png" class="icon" id="search-btn">
+
+<a href="carrito de compras.html">
+<img src="carrito de compras.png" class="icon">
+</a>
+
+</div>
+
+</div>
+
+<div class="search-box" id="search-box">
+<input type="text" placeholder="buscar...">
 </div>
 
 </header>
 
 
+<div class="side-menu" id="side-menu">
+<p>Menu</p>
+<p>Colecciones</p>
+<p>Accesorios</p>
+<p>Contacto</p>
+</div>
+
+
 <section class="hero">
-
-<img src="fondo de ropa kiman 1.png">
-
-<div class="hero-text">
-
-<h2>Primera colección "parejas"</h2>
-
-<p>
-una colección para parejas que quieren combinar
-pero no verse iguales
-</p>
-
-</div>
-
 </section>
-
-
-<section class="grid">
-
-<div class="card">
-
-<img src="coleccion-ki.png">
-
-<div class="card-text">
-
-<h3>Nueva colección Ki</h3>
-
-</div>
-
-</div>
-
-
-<div class="card">
-
-<img src="coleccion-man.png">
-
-<div class="card-text">
-
-<h3>Nueva colección Man</h3>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="products">
-
-<div class="product">
-
-<img src="producto1.png">
-
-</div>
-
-<div class="product">
-
-<img src="producto2.png">
-
-</div>
-
-<div class="product">
-
-<img src="producto3.png">
-
-</div>
-
-<div class="product">
-
-<img src="producto4.png">
-
-</div>
-
-</section>
-
-
-<footer>
-
-<div class="footer-logo">
-
-KIMAN
-
-</div>
-
-<div class="social">
-
-<img src="whatsapp.png">
-<img src="instagram.png">
-<img src="ubicacion.png">
-
-</div>
-
-</footer>
-
 </body>
+
 </html>
