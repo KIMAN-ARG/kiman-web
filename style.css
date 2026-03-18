@@ -7,7 +7,7 @@ font-family:Arial;
 
 .hero{
 height:200vh;
-background-image:url("fondo.png");
+background-image:url("fondo kiman.png");
 background-size:cover;
 background-attachment:fixed;
 background-position:center;
@@ -70,7 +70,7 @@ transition:0.3s;
 width:200px;
 padding:10px;
 border:none;
-background:"fondo kiman";
+background:"black";
 }
 
 /* menu lateral */
