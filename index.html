@@ -1,88 +1,94 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-
-<title>KIMAN</title>
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIMAN | Official Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header class="topbar">
+    <div class="bg-overlay"></div>
 
-<img src="barra 1 kiman.png" class="topbar-bg">
+    <header class="navbar">
+        <div class="logo">KIMAN</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <span class="search-icon">🔍</span>
+        </div>
+        <div class="nav-icons">
+            <span class="icon">🛒</span>
+        </div>
+    </header>
 
-<div class="topbar-content">
+    <main class="container">
+        <section class="hero slide-in">
+            <div class="hero-content">
+                <span class="tag">PAREJAS | KIMAN</span>
+                <h1>KIMAN: Primera coleccion "parejas"</h1>
+                <p>Una coleccion para parejas que quieren convinar pero no verse iguales.</p>
+                <div class="hero-action">
+                    <span class="price">$0000</span>
+                    <button class="buy-btn">🛍️</button>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="tu-foto-hero.jpg" alt="Parejas Collection">
+            </div>
+        </section>
 
-<img src="catalogo.png" class="icon" id="menu-btn">
+        <div class="grid-layout">
+            <aside class="sidebar fade-in">
+                <div class="section-box">
+                    <h3>Nuevos ingresos</h3>
+                    <div class="mini-card">
+                        <img src="img-ki.jpg" alt="">
+                        <div class="overlay-text">Nueva colección ki</div>
+                    </div>
+                    <div class="mini-card">
+                        <img src="img-man.jpg" alt="">
+                        <div class="overlay-text">Nueva colección Man</div>
+                    </div>
+                </div>
 
-<a href="index.html">
-<img src="logo 1.png" class="logo">
-</a>
+                <div class="section-box">
+                    <h3>Accesorios Kiman</h3>
+                    <ul class="acc-list">
+                        <li><span>Collar doble kiman</span> <span class="dot"></span></li>
+                        <li><span>Conjunto de anillos</span> <span class="dot"></span></li>
+                        <li><span>Cadena para Jean</span> <span class="dot"></span></li>
+                    </ul>
+                </div>
+            </aside>
 
-<div class="right-icons">
+            <section class="products-grid">
+                <div class="card fade-in">
+                    <img src="prod1.jpg" alt="Producto">
+                    <div class="card-info">
+                        <h4>Nueva colección KIMAN</h4>
+                        <p>Parejas</p>
+                    </div>
+                </div>
+                <div class="card fade-in">
+                    <img src="prod2.jpg" alt="Producto">
+                    <div class="card-info">
+                        <h4>Nueva colección KIMAN</h4>
+                        <p>Colección "MAN"</p>
+                    </div>
+                </div>
+                </section>
+        </div>
+    </main>
 
-<img src="lupa.png" class="icon" id="search-btn">
-
-<a href="carrito de compras.html">
-<img src="carrito de compras.png" class="icon">
-</a>
-
-</div>
-
-</div>
-
-<div class="search-box" id="search-box">
-<input type="text" placeholder="buscar...">
-</div>
-
-</header>
-
-
-<div class="side-menu" id="side-menu">
-<p>Menu</p>
-<p>Colecciones</p>
-<p>Accesorios</p>
-<p>Contacto</p>
-</div>
-
-
-<section class="hero">
-</section>
-
-
-<script>
-
-const searchBtn = document.getElementById("search-btn")
-const searchBox = document.getElementById("search-box")
-
-searchBtn.onclick = () => {
-
-if(searchBox.style.width === "220px"){
-searchBox.style.width = "0"
-}else{
-searchBox.style.width = "220px"
-}
-
-}
-
-const menuBtn = document.getElementById("menu-btn")
-const sideMenu = document.getElementById("side-menu")
-
-menuBtn.onclick = () => {
-
-if(sideMenu.style.left === "0px"){
-sideMenu.style.left = "-250px"
-}else{
-sideMenu.style.left = "0px"
-}
-
-}
-
-</script>
+    <footer class="footer">
+        <h2 class="giant-logo">KIMAN</h2>
+        <div class="socials">
+            <a href="#">WhatsApp</a>
+            <a href="#">Instagram</a>
+            <a href="#">Location</a>
+        </div>
+    </footer>
 
 </body>
-
 </html>
